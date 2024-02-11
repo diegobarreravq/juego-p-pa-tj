@@ -1,53 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Piedra Papel Tijeras</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <script defer type="module" src="script.js"></script>
+    <script type="module" src="index.js"></script>
+  </head>
+  <body>
     <div class="container">
-        <div class="hero">
-            <img src="/img/sunset-moon-phases-night-purple-background-shooting-stars-dark-1941117-wallhere.com.jpg" class="hero__img" alt="">
+      <div class="principal">
+        <div class="elections">
+          <h1 class="principal__title">Opción</h1>
+
+          <div class="principal__options">
+            <button id="rock--button" class="principal-option__container">
+              <img src="img/piedra.png" class="img__option" alt="" />
+              <div class="principal-option__button">piedra</div>
+            </button>
+            <button id="paper--button" class="principal-option__container">
+              <img src="img/hoja-en-blanco.png" class="img__option" alt="" />
+              <div class="principal-option__button">papel</div>
+            </button>
+            <button id="scissors--button" class="principal-option__container">
+              <img
+                src="img/cortar-con-tijeras.png"
+                class="img__option"
+                alt=""
+              />
+              <div class="principal-option__button">tijeras</div>
+            </button>
+          </div>
         </div>
-        <div class="principal">
-            
-            
-            <div class="elections">
-                <h1 class="principal__title">Elige una opción</h1>
 
-                <div class="principal__options">
-                    <div class="principal-option__container">
-                        <img src="img/piedra.png" class="principal-option__rock--img" alt="">
-                        <button class="principal-option__rock--button ">piedra</button>
-                    </div>
-                    <div class="principal-option__container">
-                        <img src="img/hoja-en-blanco.png" class="principal-option__paper--img" alt="">
-                        <button class="principal-option__paper--button ">papel</button>
-                    </div>
-                    <div class="principal-option__container">
-                        <img src="img/cortar-con-tijeras.png" class="principal-option__scissors--img" alt="">
-                        <button class="principal-option__scissors--button ">tijeras</button>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <button class="principal__start">INICIAR</button>
-
-            <div class="principal__result">
-                <div class="election  "></div>
-                <div class="vrs">VS</div>
-                <div class="machine "></div>
-            </div>
-            <div class="mensaje"></div>
-            <button class="principal__reinit">REINICIAR</button>
+        <div class="principal__result">
+          <div id="elec-pyr" class="elec"></div>
+          <div class="vrs">VS</div>
+          <div id="elec-mch" class="elec"></div>
         </div>
-        
+
+        <button id="iniciar" class="principal__start">INICIAR</button>
+
+        <div id="mensaje" class="mensaje"></div>
+        <button id="reiniciar" class="principal__reinit">REINICIAR</button>
+      </div>
     </div>
-
-    <script src="script.js"></script>
-</body>
+  </body>
 </html>
